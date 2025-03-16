@@ -2,7 +2,7 @@ Reactive Framework for perl - Inspired by Laravel Livewire
 
 ## Installing
 
-the easiest way to install for now is with (cpm)[https://metacpan.org/pod/App::cpm::Tutorial]
+the easiest way to install for now is with [cpm](https://metacpan.org/pod/App::cpm::Tutorial)
 
 add
 ```
@@ -76,11 +76,11 @@ create a new module within the namescape you specified earlier
 
 * `use Moo;`
 
-`Reactive` components currently need to use (Moo)[https://metacpan.org/pod/Moo]
+`Reactive` components currently need to use [Moo](https://metacpan.org/pod/Moo)
 
 * `use Types::Standard qw( Int );`
 
-import the `Int` type from (Type::Tiny)[https://metacpan.org/pod/Type::Tiny]
+import the `Int` type from [Type::Tiny](https://metacpan.org/pod/Type::Tiny)
 
 this part is optional but highly recommended
 
@@ -161,6 +161,6 @@ if your component has an `updated` method, this will be called when a property i
 
 ## Other
 
-* when rendering the template for your component, the component itself will be available as `$self`, this is mainly for calling methods as the properties are available directly, an example of a potential use of this can be seen (here)[https://github.com/ReactivePL/MojoDemo/blob/d17a46b7be1051a81456681195fb84d2dc16ec68/lib/ReactivePL/Reactive/Components/DataTable.pm#L118] where it calls a method to fetch DB search results
+* when rendering the template for your component, the component itself will be available as `$self`, this is mainly for calling methods as the properties are available directly, an example of a potential use of this can be seen [here](https://github.com/ReactivePL/MojoDemo/blob/d17a46b7be1051a81456681195fb84d2dc16ec68/lib/ReactivePL/Reactive/Components/DataTable.pm#L118) where it calls a method to fetch DB search results
 
 * have coercions set up / enabled for properties
