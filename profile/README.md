@@ -163,4 +163,4 @@ if your component has an `updated` method, this will be called when a property i
 
 * when rendering the template for your component, the component itself will be available as `$self`, this is mainly for calling methods as the properties are available directly, an example of a potential use of this can be seen [here](https://github.com/ReactivePL/MojoDemo/blob/d17a46b7be1051a81456681195fb84d2dc16ec68/lib/ReactivePL/Reactive/Components/DataTable.pm#L118) where it calls a method to fetch DB search results
 
-* have coercions set up / enabled for properties
+* highly recommend having coercions set up / enabled for properties
