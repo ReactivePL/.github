@@ -1,5 +1,7 @@
 Reactive Framework for perl - Inspired by Laravel Livewire
 
+NOT PRODUCTION READY YET
+
 ## Installing
 
 the easiest way to install for now is with [cpm](https://metacpan.org/pod/App::cpm::Tutorial)
