@@ -21,7 +21,7 @@ cpm install -g https://github.com/ReactivePL/Mojo.git
 
 register the plugin with `Mojolicious`, providing a list of namespaces to scan for components
 
-```
+```PERL
     $self->plugin(
         'Reactive::Mojo::Plugin',
         {
@@ -36,7 +36,7 @@ If you wish to make use of DBIx::Class objects in your properties, we need a hoo
 
 eg
 
-```
+```PERL
 use Sub::Override;
 my $override = Sub::Override->new;
 
@@ -49,7 +49,7 @@ $override->replace('Reactive::Core::Types::dbic_schema', sub { $schema });
 
 ## Your first component
 
-```
+```PERL
 package Your::App::Components::Counter;
 
 use Moo;
@@ -146,7 +146,7 @@ somewhere in your template, could potentially add to base layout if you are maki
 * use `Reactive::Core::Types::DBIx[Your::App::Schema::Result::Model]` type contraint on the property and include `coerce => 1` attribute
 
 eg
-```
+```PERL
 use Reactive::Core::Types qw( DBIx );
 has post => (is => 'ro', isa => DBIx['Your::App::Schema::Result::Post'], coerce => 1);
 ```
